@@ -1,8 +1,17 @@
 package com.github.recipe.model;
 
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.validation.constraints.NotNull;
+import lombok.*;
+
+import java.beans.BeanProperty;
+
+@Entity
+@Getter
+@Setter
+@Builder
 
 public class Step {
 
@@ -15,4 +24,8 @@ public class Step {
 
     @NotNull
     private String description;
+
+
+
+
 }

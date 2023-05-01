@@ -11,10 +11,9 @@ import lombok.*;
 @Getter
 @Setter
 @Builder
-@NoArgsConstructor
-@AllArgsConstructor
 
 public class Ingredient {
+
     @Id
     @GeneratedValue
     private Long id;

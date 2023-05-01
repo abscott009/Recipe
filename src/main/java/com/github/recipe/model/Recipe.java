@@ -10,38 +10,14 @@ import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.Collection;
 
+@Entity
+@Getter
+@Setter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+
 public class Recipe {
-    public Long getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public Integer getMinutesToMake() {
-        return minutesToMake;
-    }
-
-    public Integer getDifficultyRating() {
-        return difficultyRating;
-    }
-
-    public Collection<Ingredient> getIngredients() {
-        return ingredients;
-    }
-
-    public Collection<Step> getSteps() {
-        return steps;
-    }
-
-    public Collection<Review> getReviews() {
-        return reviews;
-    }
-
-    public URI getLocationURI() {
-        return locationURI;
-    }
 
     @Id
     @GeneratedValue
