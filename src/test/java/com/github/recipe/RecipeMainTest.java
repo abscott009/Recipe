@@ -1,5 +1,6 @@
-package com.github.recipe.test;
+package com.github.recipe;
 
+import com.github.recipe.RecipeApplication;
 import com.github.recipe.model.Ingredient;
 import com.github.recipe.model.Recipe;
 import com.github.recipe.model.Review;
@@ -9,9 +10,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Profile;
+import org.springframework.http.MediaType;
+
 
 import java.util.Set;
-
 @SpringBootApplication
 @Profile("test")
 
@@ -84,4 +86,5 @@ public class RecipeMainTest implements CommandLineRunner {
             System.out.println("FINISHED TEST DATABASE SETUP");
         }
     }
+
 }
